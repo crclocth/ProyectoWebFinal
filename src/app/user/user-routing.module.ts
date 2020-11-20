@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { UserHomeScreenComponent } from './screens/user-home-screen/user-home-screen.component';
 
 const routes: Routes = [
-  { path: '', component: UserHomeScreenComponent }  
+  { path: '', component: UserHomeScreenComponent, pathMatch: 'full' }  
 ];
 
 @NgModule({

@@ -13,6 +13,10 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     VisitorRoutingModule,
     SharedModule
+  ],
+  exports:[
+    VisitorComponent, 
+    VisitorHomeScreenComponent
   ]
 })
 export class VisitorModule { }

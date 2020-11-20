@@ -13,6 +13,10 @@ import { UserHomeScreenComponent } from './screens/user-home-screen/user-home-sc
     CommonModule,
     UserRoutingModule,
     SharedModule
+  ],
+  exports:[
+    UserComponent, 
+    UserHomeScreenComponent
   ]
 })
 export class UserModule { }
