@@ -8,15 +8,6 @@
 .my-blue-text {
   color: #192837;
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.imagen {
-  max-height: 600px;
-  background-size: contain;
-}
 .imagenextra {
   max-height: 600px;
   background-size: contain;
