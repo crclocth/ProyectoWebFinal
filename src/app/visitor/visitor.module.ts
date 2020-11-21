@@ -5,10 +5,11 @@ import { VisitorRoutingModule } from './visitor-routing.module';
 import { VisitorComponent } from './visitor.component';
 import { VisitorHomeScreenComponent } from './screens/visitor-home-screen/visitor-home-screen.component';
 import { SharedModule } from '../shared/shared.module';
+import { NosotrosComponent } from './screens/nosotros/nosotros.component';
 
 
 @NgModule({
-  declarations: [VisitorComponent, VisitorHomeScreenComponent],
+  declarations: [VisitorComponent, VisitorHomeScreenComponent, NosotrosComponent],
   imports: [
     CommonModule,
     VisitorRoutingModule,
