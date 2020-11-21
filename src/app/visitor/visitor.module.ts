@@ -7,10 +7,12 @@ import { VisitorHomeScreenComponent } from './screens/visitor-home-screen/visito
 import { SharedModule } from '../shared/shared.module';
 import { NosotrosComponent } from './screens/nosotros/nosotros.component';
 import { EncuestasComponent } from './screens/encuestas/encuestas.component';
+import { DescargasComponent } from './screens/descargas/descargas.component';
+import { SugerenciasComponent } from './screens/sugerencias/sugerencias.component';
 
 
 @NgModule({
-  declarations: [VisitorComponent, VisitorHomeScreenComponent, NosotrosComponent, EncuestasComponent],
+  declarations: [VisitorComponent, VisitorHomeScreenComponent, NosotrosComponent, EncuestasComponent, DescargasComponent, SugerenciasComponent],
   imports: [
     CommonModule,
     VisitorRoutingModule,
