@@ -14,8 +14,8 @@ const component = [
 @NgModule({
   declarations: [
     ...component,
-    CabezoteComponent,
   ],
+  
   imports: [
     CommonModule
   ],
