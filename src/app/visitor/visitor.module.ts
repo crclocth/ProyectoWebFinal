@@ -9,10 +9,17 @@ import { NosotrosComponent } from './screens/nosotros/nosotros.component';
 import { EncuestasComponent } from './screens/encuestas/encuestas.component';
 import { DescargasComponent } from './screens/descargas/descargas.component';
 import { SugerenciasComponent } from './screens/sugerencias/sugerencias.component';
+import { NoticiasComponent } from './screens/noticias/noticias.component';
 
 
 @NgModule({
-  declarations: [VisitorComponent, VisitorHomeScreenComponent, NosotrosComponent, EncuestasComponent, DescargasComponent, SugerenciasComponent],
+  declarations: [
+    VisitorComponent, 
+    VisitorHomeScreenComponent, 
+    NosotrosComponent, 
+    EncuestasComponent, 
+    DescargasComponent, 
+    SugerenciasComponent, NoticiasComponent],
   imports: [
     CommonModule,
     VisitorRoutingModule,
