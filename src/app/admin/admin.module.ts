@@ -9,10 +9,11 @@ import { AdminDescargasComponent } from './screens/admin-descargas/admin-descarg
 import { AdminEncuestasComponent } from './screens/admin-encuestas/admin-encuestas.component';
 import { AdminNosotrosComponent } from './screens/admin-nosotros/admin-nosotros.component';
 import { AdminSugerenciasComponent } from './screens/admin-sugerencias/admin-sugerencias.component';
+import { AdminNoticiasComponent } from './screens/admin-noticias/admin-noticias.component';
 
 
 @NgModule({
-  declarations: [AdminComponent, AdminHomeScreenComponent, AdminDescargasComponent, AdminEncuestasComponent, AdminNosotrosComponent, AdminSugerenciasComponent],
+  declarations: [AdminComponent, AdminHomeScreenComponent, AdminDescargasComponent, AdminEncuestasComponent, AdminNosotrosComponent, AdminSugerenciasComponent, AdminNoticiasComponent],
   imports: [
     CommonModule,
     SharedModule,
