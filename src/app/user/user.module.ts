@@ -14,7 +14,13 @@ import { UserNoticiasComponent } from './screens/user-noticias/user-noticias.com
 
 
 @NgModule({
-  declarations: [UserComponent, UserHomeScreenComponent, UserEncuestasComponent, UserDescargasComponent, UserNosotrosComponent, UserSugerenciasComponent, UserNoticiasComponent],
+  declarations: [UserComponent, 
+    UserHomeScreenComponent, 
+    UserEncuestasComponent, 
+    UserDescargasComponent, 
+    UserNosotrosComponent, 
+    UserSugerenciasComponent, 
+    UserNoticiasComponent],
   imports: [
     CommonModule,
     UserRoutingModule,

@@ -19,7 +19,8 @@ import { NoticiasComponent } from './screens/noticias/noticias.component';
     NosotrosComponent, 
     EncuestasComponent, 
     DescargasComponent, 
-    SugerenciasComponent, NoticiasComponent],
+    SugerenciasComponent, 
+    NoticiasComponent],
   imports: [
     CommonModule,
     VisitorRoutingModule,
