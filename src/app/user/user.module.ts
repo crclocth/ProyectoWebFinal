@@ -9,11 +9,12 @@ import { UserEncuestasComponent } from './screens/user-encuestas/user-encuestas.
 import { UserDescargasComponent } from './screens/user-descargas/user-descargas.component';
 import { UserNosotrosComponent } from './screens/user-nosotros/user-nosotros.component';
 import { UserSugerenciasComponent } from './screens/user-sugerencias/user-sugerencias.component';
+import { UserNoticiasComponent } from './screens/user-noticias/user-noticias.component';
 
 
 
 @NgModule({
-  declarations: [UserComponent, UserHomeScreenComponent, UserEncuestasComponent, UserDescargasComponent, UserNosotrosComponent, UserSugerenciasComponent],
+  declarations: [UserComponent, UserHomeScreenComponent, UserEncuestasComponent, UserDescargasComponent, UserNosotrosComponent, UserSugerenciasComponent, UserNoticiasComponent],
   imports: [
     CommonModule,
     UserRoutingModule,
