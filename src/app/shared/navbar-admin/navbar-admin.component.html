@@ -11,30 +11,7 @@
     </button>
 
     <div [ngSwitch]="getUrl()">
-        <div *ngSwitchCase="'/visitor'">
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav bg-sm-light mr-auto" style="font-size: 150%; margin: auto;">
-
-                    <li class="nav-item " style="margin-right: 5%;">
-                        <a class="nav-link my-blue-text" href="visitor/noticias">Noticias</a>
-                    </li>
-                    <li class="nav-item" style="margin-right: 5%;">
-                        <a class="nav-link my-blue-text" href="visitor/encuestas">Encuestas</a>
-                    </li>
-                    <li class="nav-item" style="margin-right: 5%;">
-                        <a class="nav-link my-blue-text" href="visitor/descargas">Descargas</a>
-                    </li>
-                    <li class="nav-item" style="margin-right: 5%;">
-                        <a class="nav-link my-blue-text" href="visitor/sugerencias">Sugerencias</a>
-                    </li>
-                    <li class="nav-item" style="margin-right: 5%;">
-                        <a class="nav-link my-blue-text" href="visitor/nosotros">Nosotros</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <div *ngSwitchCase="'/admin'">
-
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav bg-sm-light mr-auto" style="font-size: 150%; margin: auto;">
                     <li class="nav-item " style="margin-right: 5%;">
@@ -55,29 +32,27 @@
                 </ul>
             </div>
         </div>
-
-        <div *ngSwitchCase="'/user'">
+        <div *ngSwitchDefault>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav bg-sm-light mr-auto" style="font-size: 150%; margin: auto;">
                     <li class="nav-item " style="margin-right: 5%;">
-                        <a class="nav-link my-blue-text" href="user/noticias">Noticias</a>
+                        <a class="nav-link my-blue-text" href="admin/noticias">Noticias</a>
                     </li>
                     <li class="nav-item" style="margin-right: 5%;">
-                        <a class="nav-link my-blue-text" href="user/encuestas">Encuestas</a>
+                        <a class="nav-link my-blue-text" href="admin/encuestas">Encuestas</a>
                     </li>
                     <li class="nav-item" style="margin-right: 5%;">
-                        <a class="nav-link my-blue-text" href="user/descargas">Descargas</a>
+                        <a class="nav-link my-blue-text" href="admin/descargas">Descargas</a>
                     </li>
                     <li class="nav-item" style="margin-right: 5%;">
-                        <a class="nav-link my-blue-text" href="user/sugerencias">Sugerencias</a>
+                        <a class="nav-link my-blue-text" href="admin/sugerencias">Sugerencias</a>
                     </li>
                     <li class="nav-item" style="margin-right: 5%;">
-                        <a class="nav-link my-blue-text" href="user/nosotros">Nosotros</a>
+                        <a class="nav-link my-blue-text" href="admin/nosotros">Nosotros</a>
                     </li>
                 </ul>
             </div>
         </div>
-
     </div>
 
     <form class="form-inline my-2 my-lg-0">
