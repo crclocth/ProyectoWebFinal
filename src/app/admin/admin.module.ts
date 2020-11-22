@@ -13,7 +13,13 @@ import { AdminNoticiasComponent } from './screens/admin-noticias/admin-noticias.
 
 
 @NgModule({
-  declarations: [AdminComponent, AdminHomeScreenComponent, AdminDescargasComponent, AdminEncuestasComponent, AdminNosotrosComponent, AdminSugerenciasComponent, AdminNoticiasComponent],
+  declarations: [AdminComponent, 
+    AdminHomeScreenComponent, 
+    AdminDescargasComponent, 
+    AdminEncuestasComponent, 
+    AdminNosotrosComponent, 
+    AdminSugerenciasComponent, 
+    AdminNoticiasComponent],
   imports: [
     CommonModule,
     SharedModule,
