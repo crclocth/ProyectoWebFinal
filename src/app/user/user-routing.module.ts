@@ -9,9 +9,10 @@ import { UserSugerenciasComponent } from './screens/user-sugerencias/user-sugere
 import { UserNosotrosComponent } from './screens/user-nosotros/user-nosotros.component';
 
 const routes: Routes = [
-  { path: '', component: UserHomeScreenComponent },  
+    
   { path: '', component: UserComponent,
     children: [
+      { path: '', component: UserHomeScreenComponent },
       { path: 'noticias', component: UserNoticiasComponent},
       { path: 'encuestas', component: UserEncuestasComponent},
       { path: 'descargas', component: UserDescargasComponent},

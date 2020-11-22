@@ -9,9 +9,10 @@ import { AdminSugerenciasComponent } from './screens/admin-sugerencias/admin-sug
 import { AdminNosotrosComponent } from './screens/admin-nosotros/admin-nosotros.component';
 
 const routes: Routes = [
-  { path: '', component: AdminHomeScreenComponent },
+  
   { path: '', component: AdminComponent,
     children: [
+      { path: '', component: AdminHomeScreenComponent },
       { path: 'noticias', component: AdminNoticiasComponent},
       { path: 'encuestas', component:AdminEncuestasComponent},
       { path: 'descargas', component: AdminDescargasComponent},
