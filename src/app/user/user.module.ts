@@ -10,6 +10,7 @@ import { UserDescargasComponent } from './screens/user-descargas/user-descargas.
 import { UserNosotrosComponent } from './screens/user-nosotros/user-nosotros.component';
 import { UserSugerenciasComponent } from './screens/user-sugerencias/user-sugerencias.component';
 import { UserNoticiasComponent } from './screens/user-noticias/user-noticias.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -24,7 +25,9 @@ import { UserNoticiasComponent } from './screens/user-noticias/user-noticias.com
   imports: [
     CommonModule,
     UserRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:[
     UserComponent, 

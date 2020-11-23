@@ -10,6 +10,7 @@ import { AdminEncuestasComponent } from './screens/admin-encuestas/admin-encuest
 import { AdminNosotrosComponent } from './screens/admin-nosotros/admin-nosotros.component';
 import { AdminSugerenciasComponent } from './screens/admin-sugerencias/admin-sugerencias.component';
 import { AdminNoticiasComponent } from './screens/admin-noticias/admin-noticias.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,7 +24,9 @@ import { AdminNoticiasComponent } from './screens/admin-noticias/admin-noticias.
   imports: [
     CommonModule,
     SharedModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     AdminComponent, 

@@ -10,6 +10,7 @@ import { EncuestasComponent } from './screens/encuestas/encuestas.component';
 import { DescargasComponent } from './screens/descargas/descargas.component';
 import { SugerenciasComponent } from './screens/sugerencias/sugerencias.component';
 import { NoticiasComponent } from './screens/noticias/noticias.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,10 +22,14 @@ import { NoticiasComponent } from './screens/noticias/noticias.component';
     DescargasComponent, 
     SugerenciasComponent, 
     NoticiasComponent],
+    
   imports: [
     CommonModule,
     VisitorRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   exports:[
     VisitorComponent, 

@@ -7,6 +7,7 @@ import { CabezoteComponent } from './cabezote/cabezote.component';
 import { NavbarUserComponent } from './navbar-user/navbar-user.component';
 import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 const component = [
   FotterComponent,
@@ -23,7 +24,9 @@ const component = [
   ],
   
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
 
   exports:[
