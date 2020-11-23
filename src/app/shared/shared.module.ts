@@ -6,6 +6,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CabezoteComponent } from './cabezote/cabezote.component';
 import { NavbarUserComponent } from './navbar-user/navbar-user.component';
 import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const component = [
   FotterComponent,
@@ -13,13 +14,12 @@ const component = [
   CarouselComponent,
   NavbarUserComponent,
   NavbarAdminComponent,
-  CabezoteComponent
-
+  CabezoteComponent,
+  PageNotFoundComponent
 ]
 @NgModule({
   declarations: [
     ...component,
-   
   ],
   
   imports: [
