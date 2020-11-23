@@ -20,11 +20,9 @@ const routes: Routes = [
       { path: 'encuestas', component: EncuestasComponent},
       { path: 'descargas', component: DescargasComponent},
       { path: 'sugerencias', component: SugerenciasComponent},
-      { path: 'nosotros', component: NosotrosComponent}, 
-      { path: '**', component: PageNotFoundComponent}
+      { path: 'nosotros', component: NosotrosComponent}
     ]
-}, 
-{ path: '**', component: PageNotFoundComponent}
+} 
 ];
 
 @NgModule({
