@@ -11,6 +11,8 @@ import { DescargasComponent } from './screens/descargas/descargas.component';
 import { SugerenciasComponent } from './screens/sugerencias/sugerencias.component';
 import { NoticiasComponent } from './screens/noticias/noticias.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './screens/login/login.component';
+
 
 
 @NgModule({
@@ -21,7 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EncuestasComponent, 
     DescargasComponent, 
     SugerenciasComponent, 
-    NoticiasComponent],
+    NoticiasComponent, LoginComponent,],
     
   imports: [
     CommonModule,

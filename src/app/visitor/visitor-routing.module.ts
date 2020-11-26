@@ -8,6 +8,7 @@ import { NoticiasComponent } from './screens/noticias/noticias.component';
 import { DescargasComponent } from './screens/descargas/descargas.component';
 import { SugerenciasComponent } from './screens/sugerencias/sugerencias.component';
 import { PageNotFoundComponent } from '../shared/page-not-found/page-not-found.component';
+import { LoginComponent } from './screens/login/login.component';
 
 
 
@@ -20,7 +21,8 @@ const routes: Routes = [
       { path: 'encuestas', component: EncuestasComponent},
       { path: 'descargas', component: DescargasComponent},
       { path: 'sugerencias', component: SugerenciasComponent},
-      { path: 'nosotros', component: NosotrosComponent}
+      { path: 'nosotros', component: NosotrosComponent},
+      { path: 'login', component: LoginComponent}
     ]
 } 
 ];

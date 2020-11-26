@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  public getUrl():string{
-    return this.router.url;
+  public irlogin(){
+    this.router.navigate(['visitor/login'])
   }
 }
