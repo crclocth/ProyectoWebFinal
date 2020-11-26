@@ -12,6 +12,8 @@ import { SugerenciasComponent } from './screens/sugerencias/sugerencias.componen
 import { NoticiasComponent } from './screens/noticias/noticias.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './screens/login/login.component';
+import { RegistroComponent } from './screens/registro/registro.component';
+import { OlvidarComponent } from './screens/olvidar/olvidar.component';
 
 
 
@@ -23,7 +25,7 @@ import { LoginComponent } from './screens/login/login.component';
     EncuestasComponent, 
     DescargasComponent, 
     SugerenciasComponent, 
-    NoticiasComponent, LoginComponent,],
+    NoticiasComponent, LoginComponent, RegistroComponent, OlvidarComponent,],
     
   imports: [
     CommonModule,

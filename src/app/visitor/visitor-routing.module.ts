@@ -9,6 +9,8 @@ import { DescargasComponent } from './screens/descargas/descargas.component';
 import { SugerenciasComponent } from './screens/sugerencias/sugerencias.component';
 import { PageNotFoundComponent } from '../shared/page-not-found/page-not-found.component';
 import { LoginComponent } from './screens/login/login.component';
+import { RegistroComponent } from './screens/registro/registro.component';
+import { OlvidarComponent } from './screens/olvidar/olvidar.component';
 
 
 
@@ -22,7 +24,9 @@ const routes: Routes = [
       { path: 'descargas', component: DescargasComponent},
       { path: 'sugerencias', component: SugerenciasComponent},
       { path: 'nosotros', component: NosotrosComponent},
-      { path: 'login', component: LoginComponent}
+      { path: 'login', component: LoginComponent},
+      { path: 'registro', component: RegistroComponent},
+      { path: 'olvidar', component: OlvidarComponent}
     ]
 } 
 ];
