@@ -25,7 +25,10 @@ import { OlvidarComponent } from './screens/olvidar/olvidar.component';
     EncuestasComponent, 
     DescargasComponent, 
     SugerenciasComponent, 
-    NoticiasComponent, LoginComponent, RegistroComponent, OlvidarComponent,],
+    NoticiasComponent, 
+    LoginComponent, 
+    RegistroComponent, 
+    OlvidarComponent,],
     
   imports: [
     CommonModule,
