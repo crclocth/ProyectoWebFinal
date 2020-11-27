@@ -12,8 +12,13 @@ import { SugerenciasComponent } from './screens/sugerencias/sugerencias.componen
 import { NoticiasComponent } from './screens/noticias/noticias.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './screens/login/login.component';
-import { RegistroComponent } from './screens/registro/registro.component';
 import { OlvidarComponent } from './screens/olvidar/olvidar.component';
+
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatInputModule } from '@angular/material/input';
 
 
 
@@ -27,16 +32,21 @@ import { OlvidarComponent } from './screens/olvidar/olvidar.component';
     SugerenciasComponent, 
     NoticiasComponent, 
     LoginComponent, 
-    RegistroComponent, 
-    OlvidarComponent,],
+    OlvidarComponent
+      
+  ],
     
   imports: [
     CommonModule,
     VisitorRoutingModule,
     SharedModule,
     FormsModule,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    MatMenuModule,
+    MatInputModule,
   ],
   exports:[
     VisitorComponent, 

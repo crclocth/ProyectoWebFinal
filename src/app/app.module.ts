@@ -7,6 +7,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { SharedModule } from './shared/shared.module';
 import { VisitorModule } from './visitor/visitor.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -21,7 +22,8 @@ import { VisitorModule } from './visitor/visitor.module';
     SharedModule,
     VisitorModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
