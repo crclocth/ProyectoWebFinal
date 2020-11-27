@@ -10,7 +10,8 @@ import { SugerenciasComponent } from './screens/sugerencias/sugerencias.componen
 import { PageNotFoundComponent } from '../shared/page-not-found/page-not-found.component';
 import { LoginComponent } from './screens/login/login.component';
 import { OlvidarComponent } from './screens/olvidar/olvidar.component';
-import { RegistrooComponent } from './screens/registroo/registroo.component';
+import { RegistroComponent } from './screens/registro/registro.component';
+
 
 
 
@@ -25,7 +26,7 @@ const routes: Routes = [
       { path: 'sugerencias', component: SugerenciasComponent},
       { path: 'nosotros', component: NosotrosComponent},
       { path: 'login', component: LoginComponent},
-      { path: 'registroo', component: RegistrooComponent},
+      { path: 'registro', component: RegistroComponent},
       { path: 'olvidar', component: OlvidarComponent}
     ]
 } 

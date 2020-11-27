@@ -19,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatInputModule } from '@angular/material/input';
+import { RegistroComponent } from './screens/registro/registro.component';
 
 
 
@@ -32,7 +33,7 @@ import { MatInputModule } from '@angular/material/input';
     SugerenciasComponent, 
     NoticiasComponent, 
     LoginComponent, 
-    OlvidarComponent
+    OlvidarComponent, RegistroComponent
       
   ],
     
