@@ -1,0 +1,23 @@
+h3 {
+  font-size: 14px;
+}
+.ng-touched {
+  background-color: #ff0000;
+}
+#mensaje {
+  clear: both;
+  width: 100%;
+}
+#mensaje .text-muted {
+  color: red !important;
+}
+#informacion ul {
+  list-style-type: none;
+}
+#informacion ul li {
+  float: center;
+  margin: 10px;
+}
+.lleno {
+  visibility: hidden;
+}
