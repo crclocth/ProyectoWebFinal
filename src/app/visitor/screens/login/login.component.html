@@ -1,13 +1,13 @@
 <div class="container text-center">
     <div class="row">
         <div class="col-lg-6 offset-lg-3 col">
-
+            <!--3-->
             <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
 
                 <div id='mensaje' [style.visibility]="isDivVisible ? 'visible' : 'hidden'" class="alert alert-success" role="alert">{{mensaje}}</div>
 
                 <div id='formulario' [ngClass]="{lleno: mensaje}">
-                    <h2 style="color: silver; margin-bottom: 1cm;">Registro</h2>
+                    <h2 style="color: silver; margin-bottom: 1cm;">Inicio de sesión</h2>
 
                     <!----------------------------------------------------------------------------------------------------->
                     <h6 style="color: silver;">Ingresa tu Email</h6>
@@ -33,11 +33,15 @@
                     <!----------------------------------------------------------------------------------------------------------->
 
 
-                    <button class="btn btn-primary" type="submit" [disabled]="!checkoutForm.valid">Guardar</button>
+                    <button class="btn btn-primary" type="submit margin-bottom: 1cm" [disabled]="!checkoutForm.valid">Iniciar Sesión</button>
 
 
                 </div>
             </form>
+            <button class="btn btn-primary bottomsd" type="submit">¿Eres nuevo? Registrate</button>
+            <button class="btn btn-primary bottomsd bott" type="submit">¿Olvidaste tu Contraseña?</button>
+
         </div>
+
     </div>
 </div>
