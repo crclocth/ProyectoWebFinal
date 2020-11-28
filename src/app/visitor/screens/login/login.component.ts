@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormControl } from '@angular/forms';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
 
 
 
-  constructor() {
+  constructor( private router:Router) {
     this.checkoutForm = this.createFormGroup();
   }
 
@@ -22,7 +22,12 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+  public irregistro(){
+    this.router.navigate(['visitor/registro'])
+  }
+  public irolvidar(){
+    this.router.navigate(['visitor/olvidar'])
+  }
 
 
   createFormGroup() {

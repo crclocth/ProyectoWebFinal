@@ -1,9 +1,6 @@
 h3 {
   font-size: 14px;
 }
-.ng-touched {
-  background-color: #ff0000;
-}
 #mensaje {
   clear: both;
   width: 100%;
@@ -20,4 +17,10 @@ h3 {
 }
 .lleno {
   visibility: hidden;
+}
+.bottomsd {
+  margin-top: 10%;
+}
+.bott {
+  margin-left: 2%;
 }

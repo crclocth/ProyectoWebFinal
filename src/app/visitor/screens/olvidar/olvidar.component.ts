@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,24 +10,62 @@ import { FormGroup, FormControl, Validators} from '@angular/forms';
 })
 export class OlvidarComponent implements OnInit {
 
-  checkoutForm1: FormGroup;
+  checkoutForm: FormGroup;
   mensaje:string="";
-  isDivVisible=false;
+  isDivVisible = false;
 
-  constructor() { 
-    this.checkoutForm1 = this.createFormGroup();
+
+
+  constructor( private router:Router) {
+    this.checkoutForm = this.createFormGroup();
   }
+
 
   ngOnInit(): void {
   }
+
+  public irregistro(){
+    this.router.navigate(['visitor/registro'])
+  }
+  public irolvidar(){
+    this.router.navigate(['visitor/olvidar'])
+  }
+
+
   createFormGroup() {
     return new FormGroup({
-      usuario1: new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$")])
+      usuario: new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$")]),
+      
+
     });
   }
+
   onSubmit(){
-    this.mensaje="datos completados";
-    this.isDivVisible=true;
+    
   }
-  get usuario1() { return this.checkoutForm1.get('usuario'); }
+  get usuario() { return this.checkoutForm.get('usuario')?.value; }
+ 
+
+
+  // GUARDAR DATOS EN ARRAY
+/*
+  public async postUsuario() { 
+    let datosFormulario = {
+
+      nombre: this.checkoutForm.get('nombre')?.value,
+      usuario: this.checkoutForm.get('usuario')?.value, 
+      password: this.checkoutForm.get('password')?.value, 
+      passwordtwo: this.checkoutForm.get('passwordtwo')?.value,
+
+    };
+    console.log(datosFormulario);
+    try {
+      this.mensaje="Se guardaron los datos.";
+      this.isDivVisible=true;
+      await this.visitorProviderService.postUser(datosFormulario).toPromise();
+    }
+    catch (error) {
+      alert("Error al añadir el usuario");
+    } 
+  }*/
 }
