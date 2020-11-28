@@ -1,1 +1,46 @@
-fsdsfdfs
+<div class="container text-center ">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3 col ">
+            <form [formGroup]="checkoutForm2" (ngSubmit)="onSubmit()">
+
+                <div id='mensaje' [style.visibility]="isDivVisible ? 'visible' : 'hidden'" class="alert alert-success" role="alert">{{mensaje}}</div>
+
+                <div id='formulario' [ngClass]="{lleno: mensaje}">
+                    <h2 style="color: silver; margin-bottom: 1cm;">Sugerencias</h2>
+                    <!---------------------------------------------------------------------------------------------------->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+
+                        </div>
+                        <input id="usuario2" name='usuario2' class="form-control" type="email" formControlName="usuario2" placeholder="Correo">
+                        <div id='mensaje'>
+                            <small id="emailHelp" class="form-text text-muted" *ngIf="(usuario2.dirty || usuario2.touched) && usuario2.invalid && usuario2.errors.required"> Requerido  </small>
+                            <small id="emailHelp" class="form-text text-muted" *ngIf="(usuario2.dirty || usuario2.touched) && usuario2.invalid && usuario2.errors.pattern">Formato email requerido</small>
+                        </div>
+                    </div>
+                    <!------------------------------------------------------------------------------------------------------->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+
+                        </div>
+                        <input id="asunto" name='asunto' class="form-control" type="text" formControlName="asunto" placeholder="Asunto">
+                        <div id='mensaje'>
+                            <small id="emailHelp" class="form-text text-muted" *ngIf="(asunto.dirty || asunto.touched) && asunto.invalid && asunto.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+
+                        </div>
+                        <input id="tex" name='tex' class="form-control" type="text" formControlName="tex" placeholder="Mensaje">
+                        <div id='mensaje'>
+                            <small id="emailHelp" class="form-text text-muted" *ngIf="(tex.dirty || tex.touched) && tex.invalid && tex.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit" [disabled]="!checkoutForm2.valid">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
