@@ -28,6 +28,9 @@ export class LoginComponent implements OnInit {
   public irolvidar(){
     this.router.navigate(['visitor/olvidar'])
   }
+  public irauser(){
+    this.router.navigate(['user/'])
+  }
 
 
   createFormGroup() {
