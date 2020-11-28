@@ -21,6 +21,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatInputModule } from '@angular/material/input';
 import { RegistroComponent } from './screens/registro/registro.component';
 import { VisitorProviderService } from '../core/providers/visitor/visitor-provider.service';
+import { CoreModule } from '../core/core.module';
 
 
 
@@ -49,6 +50,7 @@ import { VisitorProviderService } from '../core/providers/visitor/visitor-provid
     MatListModule,
     MatMenuModule,
     MatInputModule,
+    CoreModule
   ],
   providers:[
     VisitorProviderService

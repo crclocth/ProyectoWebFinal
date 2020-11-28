@@ -48,7 +48,7 @@ export class RegistroComponent implements OnInit {
 
 
   // GUARDAR DATOS EN ARRAY
-
+/*
   public async postUsuario() { 
     let datosFormulario = {
 
@@ -67,5 +67,5 @@ export class RegistroComponent implements OnInit {
     catch (error) {
       alert("Error al añadir el usuario");
     } 
-  }
+  }*/
 }

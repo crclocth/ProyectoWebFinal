@@ -14,6 +14,6 @@ export class VisitorProviderService {
   }
   public postUser(user: any): Observable<User>{
     return this.httpService.post('/user/add',user);
-  }
+  };
 
 }
