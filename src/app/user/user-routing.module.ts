@@ -7,6 +7,7 @@ import { UserEncuestasComponent } from './screens/user-encuestas/user-encuestas.
 import { UserDescargasComponent } from './screens/user-descargas/user-descargas.component';
 import { UserSugerenciasComponent } from './screens/user-sugerencias/user-sugerencias.component';
 import { UserNosotrosComponent } from './screens/user-nosotros/user-nosotros.component';
+import { UserMiperfilComponent } from './screens/user-miperfil/user-miperfil.component';
 
 const routes: Routes = [
     
@@ -17,7 +18,8 @@ const routes: Routes = [
       { path: 'encuestas', component: UserEncuestasComponent},
       { path: 'descargas', component: UserDescargasComponent},
       { path: 'sugerencias', component: UserSugerenciasComponent},
-      { path: 'nosotros', component: UserNosotrosComponent} 
+      { path: 'nosotros', component: UserNosotrosComponent}, 
+      { path: 'miperfil', component: UserMiperfilComponent}
     ]
 }
 ];

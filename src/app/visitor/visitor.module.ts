@@ -35,8 +35,8 @@ import { CoreModule } from '../core/core.module';
     SugerenciasComponent, 
     NoticiasComponent, 
     LoginComponent, 
-    OlvidarComponent, RegistroComponent
-      
+    OlvidarComponent, 
+    RegistroComponent, 
   ],
     
   imports: [

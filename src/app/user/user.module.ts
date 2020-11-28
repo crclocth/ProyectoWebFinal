@@ -11,6 +11,7 @@ import { UserNosotrosComponent } from './screens/user-nosotros/user-nosotros.com
 import { UserSugerenciasComponent } from './screens/user-sugerencias/user-sugerencias.component';
 import { UserNoticiasComponent } from './screens/user-noticias/user-noticias.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserMiperfilComponent } from './screens/user-miperfil/user-miperfil.component';
 
 
 
@@ -21,7 +22,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UserDescargasComponent, 
     UserNosotrosComponent, 
     UserSugerenciasComponent, 
-    UserNoticiasComponent],
+    UserNoticiasComponent, 
+    UserMiperfilComponent],
   imports: [
     CommonModule,
     UserRoutingModule,
