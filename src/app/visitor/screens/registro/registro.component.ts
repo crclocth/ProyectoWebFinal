@@ -46,9 +46,6 @@ export class RegistroComponent implements OnInit {
   get password() { return this.checkoutForm.get('password')?.value; }
   get passwordtwo() { return this.checkoutForm.get('passwordtwo')?.value;}
 
-
-  // GUARDAR DATOS EN ARRAY
-
   public async postUsuario() { 
     let datosFormulario = {
 
