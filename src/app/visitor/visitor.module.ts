@@ -20,6 +20,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatInputModule } from '@angular/material/input';
 import { RegistroComponent } from './screens/registro/registro.component';
+import { VisitorProviderService } from '../core/providers/visitor/visitor-provider.service';
 
 
 
@@ -49,6 +50,10 @@ import { RegistroComponent } from './screens/registro/registro.component';
     MatMenuModule,
     MatInputModule,
   ],
+  providers:[
+    VisitorProviderService
+  ],
+    
   exports:[
     VisitorComponent, 
     VisitorHomeScreenComponent

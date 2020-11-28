@@ -1,9 +1,6 @@
 h3 {
   font-size: 14px;
 }
-.ng-touched {
-  background-color: #ff0000;
-}
 #mensaje {
   clear: both;
   width: 100%;
