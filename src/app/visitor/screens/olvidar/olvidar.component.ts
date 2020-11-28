@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
+import { RecuperarProviderService } from '../../../core/providers/recuperar/recuperar-provider.service';
 
 
 @Component({
@@ -16,7 +17,7 @@ export class OlvidarComponent implements OnInit {
 
 
 
-  constructor( private router:Router) {
+  constructor( private router:Router, private recuperarProviderService: RecuperarProviderService) {
     this.checkoutForm = this.createFormGroup();
   }
 
@@ -47,25 +48,23 @@ export class OlvidarComponent implements OnInit {
  
 
 
-  // GUARDAR DATOS EN ARRAY
-/*
-  public async postUsuario() { 
+
+  public async postRecuoerar() { 
     let datosFormulario = {
 
-      nombre: this.checkoutForm.get('nombre')?.value,
-      usuario: this.checkoutForm.get('usuario')?.value, 
-      password: this.checkoutForm.get('password')?.value, 
-      passwordtwo: this.checkoutForm.get('passwordtwo')?.value,
+      
+      email: this.checkoutForm.get('usuario')?.value, 
+      
 
     };
     console.log(datosFormulario);
     try {
       this.mensaje="Se guardaron los datos.";
       this.isDivVisible=true;
-      await this.visitorProviderService.postUser(datosFormulario).toPromise();
+      await this.recuperarProviderService.postRecuperar(datosFormulario).toPromise();
     }
     catch (error) {
       alert("Error al añadir el usuario");
     } 
-  }*/
+  }
 }

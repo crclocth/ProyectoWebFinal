@@ -23,6 +23,7 @@ import { RegistroComponent } from './screens/registro/registro.component';
 import { VisitorProviderService } from '../core/providers/visitor/visitor-provider.service';
 import { CoreModule } from '../core/core.module';
 import { SugerenciasProviderService } from '../core/providers/sugerencias/sugerencias-provider.service';
+import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-provider.service';
 
 
 
@@ -55,7 +56,8 @@ import { SugerenciasProviderService } from '../core/providers/sugerencias/sugere
   ],
   providers:[
     VisitorProviderService,
-    SugerenciasProviderService
+    SugerenciasProviderService,
+    RecuperarProviderService
   ],
     
   exports:[
