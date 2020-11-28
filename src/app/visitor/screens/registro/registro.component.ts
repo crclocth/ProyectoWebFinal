@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Route } from '@angular/router';
 import { VisitorProviderService } from '../../../core/providers/visitor/visitor-provider.service';
+import { User } from '../../../core/models/user.model';
 
 @Component({
   selector: 'app-registro',
@@ -13,7 +14,6 @@ export class RegistroComponent implements OnInit {
   checkoutForm: FormGroup;
   mensaje:string="";
   isDivVisible = false;
-
 
 
   constructor(private visitorProviderService: VisitorProviderService) {
@@ -49,10 +49,10 @@ export class RegistroComponent implements OnInit {
   public async postUsuario() { 
     let datosFormulario = {
 
-      nombre: this.checkoutForm.get('nombre')?.value,
-      usuario: this.checkoutForm.get('usuario')?.value, 
-      password: this.checkoutForm.get('password')?.value, 
-      passwordtwo: this.checkoutForm.get('passwordtwo')?.value,
+      nombres: this.checkoutForm.get('nombre')?.value,
+      email: this.checkoutForm.get('usuario')?.value, 
+      contraseña: this.checkoutForm.get('password')?.value, 
+      contraseñaRepetida: this.checkoutForm.get('passwordtwo')?.value,
 
     };
     console.log(datosFormulario);

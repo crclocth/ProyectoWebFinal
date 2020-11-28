@@ -22,6 +22,7 @@ import { MatInputModule } from '@angular/material/input';
 import { RegistroComponent } from './screens/registro/registro.component';
 import { VisitorProviderService } from '../core/providers/visitor/visitor-provider.service';
 import { CoreModule } from '../core/core.module';
+import { SugerenciasProviderService } from '../core/providers/sugerencias/sugerencias-provider.service';
 
 
 
@@ -53,12 +54,14 @@ import { CoreModule } from '../core/core.module';
     CoreModule
   ],
   providers:[
-    VisitorProviderService
+    VisitorProviderService,
+    SugerenciasProviderService
   ],
     
   exports:[
     VisitorComponent, 
     VisitorHomeScreenComponent
+
   ]
 })
 export class VisitorModule { }
