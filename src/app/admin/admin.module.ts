@@ -11,6 +11,9 @@ import { AdminNosotrosComponent } from './screens/admin-nosotros/admin-nosotros.
 import { AdminSugerenciasComponent } from './screens/admin-sugerencias/admin-sugerencias.component';
 import { AdminNoticiasComponent } from './screens/admin-noticias/admin-noticias.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { VisitorProviderService } from '../core/providers/visitor/visitor-provider.service';
+import { SugerenciasProviderService } from '../core/providers/sugerencias/sugerencias-provider.service';
+import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-provider.service';
 
 
 @NgModule({
@@ -27,6 +30,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AdminRoutingModule,
     FormsModule,
     ReactiveFormsModule
+  ],
+  providers:[
+    VisitorProviderService,
+    SugerenciasProviderService,
+    RecuperarProviderService
   ],
   exports: [
     AdminComponent, 

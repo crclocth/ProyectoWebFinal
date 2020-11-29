@@ -38,7 +38,7 @@
                             <small id="emailHelp" class="form-text text-muted" *ngIf="(tex.dirty || tex.touched) && tex.invalid && tex.errors.required"> Requerido  </small>
                         </div>
                     </div>
-                    <button class="btn btn-primary" type="submit" [disabled]="!checkoutForm2.valid">Enviar</button>
+                    <button class="btn btn-primary" type="submit" [disabled]="!checkoutForm2.valid" (click)="postSugerencia()">Enviar</button>
                 </div>
             </form>
         </div>
