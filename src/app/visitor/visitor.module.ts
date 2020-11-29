@@ -26,6 +26,7 @@ import { SugerenciasProviderService } from '../core/providers/sugerencias/sugere
 import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-provider.service';
 import { Encuesta1Component } from './screens/encuesta1/encuesta1.component';
 import { Encuesta2Component } from './screens/encuesta2/encuesta2.component';
+import { Encuesta3Component } from './screens/encuesta3/encuesta3.component';
 
 
 
@@ -40,7 +41,7 @@ import { Encuesta2Component } from './screens/encuesta2/encuesta2.component';
     NoticiasComponent, 
     LoginComponent, 
     OlvidarComponent, 
-    RegistroComponent, Encuesta1Component, Encuesta2Component,
+    RegistroComponent, Encuesta1Component, Encuesta2Component, Encuesta3Component,
   ],
     
   imports: [

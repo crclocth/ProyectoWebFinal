@@ -16,4 +16,10 @@ export class EncuestasComponent implements OnInit {
   public irencuesta1(){
     this.router.navigate(['visitor/encuesta1'])
   }
+  public irencuesta2(){
+    this.router.navigate(['visitor/encuesta2'])
+  }
+  public irencuesta3(){
+    this.router.navigate(['visitor/encuesta3'])
+  }
 }

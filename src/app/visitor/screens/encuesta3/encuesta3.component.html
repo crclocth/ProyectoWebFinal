@@ -7,7 +7,7 @@
                 <div id='mensaje' [style.visibility]="isDivVisible ? 'visible' : 'hidden'" class="alert alert-success" role="alert">{{mensaje}}</div>
 
                 <div id='formulario' [ngClass]="{lleno: mensaje}">
-                    <h2 style="color: silver; margin-bottom: 1cm;">Encuesta futuros proyectos
+                    <h2 style="color: silver; margin-bottom: 1cm;">Encuesta opinión sobre Pagina Web
                     </h2>
 
                     <!----------------------------------------------------------------------------------------------------->
@@ -22,7 +22,7 @@
                             <small id="emailHelp" class="form-text text-muted" *ngIf="(usuario.dirty || usuario.touched) && usuario.invalid && usuario.errors.pattern">Formato email requerido</small>
                         </div>
                     </div>
-                    <h5 style="color: silver">¿Que tipo de proyecto o programa le gustará que nuestra empresa desarrolle en un futuro?</h5>
+                    <h5 style="color: silver">¿Que cambios propondría para la pagina?</h5>
                     <!------------------------------------------------------------------------------------------------------->
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
