@@ -52,23 +52,22 @@ export class LoginComponent implements OnInit {
 
   // GUARDAR DATOS EN ARRAY
 /*
-  public async postUsuario() { 
+  public async postlogin() { 
     let datosFormulario = {
 
-      nombre: this.checkoutForm.get('nombre')?.value,
+     
       usuario: this.checkoutForm.get('usuario')?.value, 
       password: this.checkoutForm.get('password')?.value, 
-      passwordtwo: this.checkoutForm.get('passwordtwo')?.value,
 
     };
     console.log(datosFormulario);
     try {
       this.mensaje="Se guardaron los datos.";
       this.isDivVisible=true;
-      await this.visitorProviderService.postUser(datosFormulario).toPromise();
+      await this.loginProviderService.postlogin(datosFormulario).toPromise();
     }
     catch (error) {
-      alert("Error al añadir el usuario");
+      alert("Error al iniciar sesión");
     } 
   }*/
 

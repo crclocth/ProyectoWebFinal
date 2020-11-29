@@ -64,7 +64,7 @@ export class OlvidarComponent implements OnInit {
       await this.recuperarProviderService.postRecuperar(datosFormulario).toPromise();
     }
     catch (error) {
-      alert("Error al añadir el usuario");
+      alert("Error al añadir el correo de recuperar clave");
     } 
   }
 }

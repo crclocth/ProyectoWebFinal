@@ -65,7 +65,7 @@ export class RegistroComponent implements OnInit {
       await this.visitorProviderService.postUser(datosFormulario).toPromise();
     }
     catch (error) {
-      alert("Error al añadir el usuario");
+      alert("Error al añadir el registro");
     } 
   }
 }

@@ -44,7 +44,10 @@ import { Encuesta3ProviderService } from '../core/providers/encuesta3/encuesta3-
     NoticiasComponent, 
     LoginComponent, 
     OlvidarComponent, 
-    RegistroComponent, Encuesta1Component, Encuesta2Component, Encuesta3Component,
+    RegistroComponent, 
+    Encuesta1Component, 
+    Encuesta2Component, 
+    Encuesta3Component,
   ],
     
   imports: [

@@ -51,7 +51,7 @@ export class SugerenciasComponent implements OnInit {
       await this.sugerenciasProviderService.postSugerencia(datosFormulario).toPromise();
     }
     catch (error) {
-      alert("Error al añadir el usuario");
+      alert("Error al añadir sugerencia");
     } 
   }
 }

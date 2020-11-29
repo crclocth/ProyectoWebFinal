@@ -1,4 +1,4 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule, } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { VisitorHomeScreenComponent } from './screens/visitor-home-screen/visitor-home-screen.component';
 import { VisitorComponent } from './visitor.component';
@@ -7,7 +7,6 @@ import { EncuestasComponent } from './screens/encuestas/encuestas.component';
 import { NoticiasComponent } from './screens/noticias/noticias.component';
 import { DescargasComponent } from './screens/descargas/descargas.component';
 import { SugerenciasComponent } from './screens/sugerencias/sugerencias.component';
-import { PageNotFoundComponent } from '../shared/page-not-found/page-not-found.component';
 import { LoginComponent } from './screens/login/login.component';
 import { OlvidarComponent } from './screens/olvidar/olvidar.component';
 import { RegistroComponent } from './screens/registro/registro.component';

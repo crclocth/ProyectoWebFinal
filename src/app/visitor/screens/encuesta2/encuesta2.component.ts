@@ -59,7 +59,7 @@ export class Encuesta2Component implements OnInit {
       await this.encuesta2ProviderService.postEncuesta2(datosFormulario).toPromise();
     }
     catch (error) {
-      alert("Error al añadir el usuario");
+      alert("Error al añadir la encuesta 2");
     } 
   }
 
