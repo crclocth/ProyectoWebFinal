@@ -24,6 +24,8 @@ import { VisitorProviderService } from '../core/providers/visitor/visitor-provid
 import { CoreModule } from '../core/core.module';
 import { SugerenciasProviderService } from '../core/providers/sugerencias/sugerencias-provider.service';
 import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-provider.service';
+import { Encuesta1Component } from './screens/encuesta1/encuesta1.component';
+import { Encuesta2Component } from './screens/encuesta2/encuesta2.component';
 
 
 
@@ -38,7 +40,7 @@ import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-
     NoticiasComponent, 
     LoginComponent, 
     OlvidarComponent, 
-    RegistroComponent, 
+    RegistroComponent, Encuesta1Component, Encuesta2Component,
   ],
     
   imports: [

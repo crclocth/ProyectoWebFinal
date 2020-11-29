@@ -11,7 +11,8 @@ import { PageNotFoundComponent } from '../shared/page-not-found/page-not-found.c
 import { LoginComponent } from './screens/login/login.component';
 import { OlvidarComponent } from './screens/olvidar/olvidar.component';
 import { RegistroComponent } from './screens/registro/registro.component';
-
+import { Encuesta1Component } from './screens/encuesta1/encuesta1.component';
+import { Encuesta2Component } from './screens/encuesta2/encuesta2.component';
 
 
 
@@ -28,6 +29,8 @@ const routes: Routes = [
       { path: 'login', component: LoginComponent},
       { path: 'registro', component: RegistroComponent},
       { path: 'olvidar', component: OlvidarComponent},
+      { path: 'encuesta1', component:Encuesta1Component},
+      { path: 'encuesta2', component:Encuesta2Component}
     ]
 } 
 ];

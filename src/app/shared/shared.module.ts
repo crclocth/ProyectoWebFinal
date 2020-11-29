@@ -16,11 +16,13 @@ const component = [
   NavbarUserComponent,
   NavbarAdminComponent,
   CabezoteComponent,
-  PageNotFoundComponent
+  PageNotFoundComponent,
+  
 ]
 @NgModule({
   declarations: [
     ...component,
+    
   ],
   
   imports: [
