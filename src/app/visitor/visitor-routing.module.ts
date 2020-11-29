@@ -13,6 +13,7 @@ import { OlvidarComponent } from './screens/olvidar/olvidar.component';
 import { RegistroComponent } from './screens/registro/registro.component';
 import { Encuesta1Component } from './screens/encuesta1/encuesta1.component';
 import { Encuesta2Component } from './screens/encuesta2/encuesta2.component';
+import { Encuesta3Component } from './screens/encuesta3/encuesta3.component';
 
 
 
@@ -30,7 +31,8 @@ const routes: Routes = [
       { path: 'registro', component: RegistroComponent},
       { path: 'olvidar', component: OlvidarComponent},
       { path: 'encuesta1', component:Encuesta1Component},
-      { path: 'encuesta2', component:Encuesta2Component}
+      { path: 'encuesta2', component:Encuesta2Component},
+      { path: 'encuesta3', component:Encuesta3Component}
     ]
 } 
 ];
