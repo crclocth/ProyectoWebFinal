@@ -1,0 +1,45 @@
+<div class="container text-center">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3 col">
+
+            <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+                <div id='mensaje' [style.visibility]="isDivVisible ? 'visible' : 'hidden'" class="alert alert-success" role="alert">{{mensaje}}</div>
+
+                <div id='formulario' [ngClass]="{lleno: mensaje}">
+                    <h2 style="color: silver; margin-bottom: 1cm;">Encuesta futuros proyectos
+                    </h2>
+
+                    <!----------------------------------------------------------------------------------------------------->
+                    <div class="input-group mb-3">
+
+                        <div class="input-group-prepend">
+
+                        </div>
+                        <input id="usuario" name='usuario' class="form-control" type="email" formControlName="usuario" placeholder="Correo">
+                        <div id='mensaje'>
+                            <small id="emailHelp" class="form-text text-muted" *ngIf="(usuario.dirty || usuario.touched) && usuario.invalid && usuario.errors.required"> Requerido  </small>
+                            <small id="emailHelp" class="form-text text-muted" *ngIf="(usuario.dirty || usuario.touched) && usuario.invalid && usuario.errors.pattern">Formato email requerido</small>
+                        </div>
+                    </div>
+                    <h5 style="color: silver">¿Que tipo de proyecto o programa le gustará que nuestra empresa desarrolle en un futuro?</h5>
+                    <!------------------------------------------------------------------------------------------------------->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+
+                        </div>
+                        <input id="tex" name='tex' class="form-control" type="text" formControlName="tex" placeholder="Comentario">
+                        <div id='mensaje'>
+                            <small id="emailHelp" class="form-text text-muted" *ngIf="(tex.dirty || tex.touched) && tex.invalid && tex.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+
+                    <button class="btn btn-primary" type="submit" [disabled]="!checkoutForm.valid" (click)="postEncuesta2()">Enviar</button>
+                    <!---<button type="reset">reset</button>-->
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

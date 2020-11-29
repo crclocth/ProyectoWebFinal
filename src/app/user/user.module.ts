@@ -15,6 +15,12 @@ import { UserMiperfilComponent } from './screens/user-miperfil/user-miperfil.com
 import { VisitorProviderService } from '../core/providers/visitor/visitor-provider.service';
 import { SugerenciasProviderService } from '../core/providers/sugerencias/sugerencias-provider.service';
 import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-provider.service';
+import { UserEncuesta3Component } from './screens/user-encuesta3/user-encuesta3.component';
+import { UserEncuesta2Component } from './screens/user-encuesta2/user-encuesta2.component';
+import { UserEncuesta1Component } from './screens/user-encuesta1/user-encuesta1.component';
+import { Encuesta1ProviderService } from '../core/providers/encuesta1/encuesta1-provider.service';
+import { Encuesta2ProviderService } from '../core/providers/encuesta2/encuesta2-provider.service';
+import { Encuesta3ProviderService } from '../core/providers/encuesta3/encuesta3-provider.service';
 
 
 
@@ -26,7 +32,10 @@ import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-
     UserNosotrosComponent, 
     UserSugerenciasComponent, 
     UserNoticiasComponent, 
-    UserMiperfilComponent],
+    UserMiperfilComponent, 
+    UserEncuesta3Component, 
+    UserEncuesta2Component, 
+    UserEncuesta1Component],
   imports: [
     CommonModule,
     UserRoutingModule,
@@ -38,7 +47,10 @@ import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-
   providers:[
     VisitorProviderService,
     SugerenciasProviderService,
-    RecuperarProviderService
+    RecuperarProviderService,
+    Encuesta1ProviderService,
+    Encuesta2ProviderService,
+    Encuesta3ProviderService
   ],
   exports:[
     UserComponent, 
