@@ -12,6 +12,9 @@ import { UserSugerenciasComponent } from './screens/user-sugerencias/user-sugere
 import { UserNoticiasComponent } from './screens/user-noticias/user-noticias.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserMiperfilComponent } from './screens/user-miperfil/user-miperfil.component';
+import { VisitorProviderService } from '../core/providers/visitor/visitor-provider.service';
+import { SugerenciasProviderService } from '../core/providers/sugerencias/sugerencias-provider.service';
+import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-provider.service';
 
 
 
@@ -30,6 +33,12 @@ import { UserMiperfilComponent } from './screens/user-miperfil/user-miperfil.com
     SharedModule,
     FormsModule,
     ReactiveFormsModule
+  ],
+
+  providers:[
+    VisitorProviderService,
+    SugerenciasProviderService,
+    RecuperarProviderService
   ],
   exports:[
     UserComponent, 

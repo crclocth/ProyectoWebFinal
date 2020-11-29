@@ -59,7 +59,8 @@ import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-
     SugerenciasProviderService,
     RecuperarProviderService
   ],
-    
+  
+
   exports:[
     VisitorComponent, 
     VisitorHomeScreenComponent
