@@ -40,6 +40,9 @@ export class RegistroComponent implements OnInit {
   onSubmit(){
     
   }
+  //onReset(){
+    //this.checkoutForm.reset();
+  //}
 
   get nombre() { return this.checkoutForm.get('nombre')?.value;}
   get usuario() { return this.checkoutForm.get('usuario')?.value; }
