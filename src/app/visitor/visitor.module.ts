@@ -27,6 +27,9 @@ import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-
 import { Encuesta1Component } from './screens/encuesta1/encuesta1.component';
 import { Encuesta2Component } from './screens/encuesta2/encuesta2.component';
 import { Encuesta3Component } from './screens/encuesta3/encuesta3.component';
+import { Encuesta1ProviderService } from '../core/providers/encuesta1/encuesta1-provider.service';
+import { Encuesta2ProviderService } from '../core/providers/encuesta2/encuesta2-provider.service';
+import { Encuesta3ProviderService } from '../core/providers/encuesta3/encuesta3-provider.service';
 
 
 
@@ -60,7 +63,10 @@ import { Encuesta3Component } from './screens/encuesta3/encuesta3.component';
   providers:[
     VisitorProviderService,
     SugerenciasProviderService,
-    RecuperarProviderService
+    RecuperarProviderService,
+    Encuesta1ProviderService,
+    Encuesta2ProviderService,
+    Encuesta3ProviderService
   ],
   
 

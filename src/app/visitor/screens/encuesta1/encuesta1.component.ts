@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { VisitorProviderService } from '../../../core/providers/visitor/visitor-provider.service';
+import { Encuesta1ProviderService } from '../../../core/providers/encuesta1/encuesta1-provider.service';
 
 @Component({
   selector: 'app-encuesta1',
@@ -14,7 +14,7 @@ export class Encuesta1Component implements OnInit {
   isDivVisible = false;
 
 
-  constructor(private visitorProviderService: VisitorProviderService) {
+  constructor(private encuesta1ProviderService: Encuesta1ProviderService) {
     this.checkoutForm = this.createFormGroup();
   }
 
@@ -44,7 +44,7 @@ export class Encuesta1Component implements OnInit {
   get usuario() { return this.checkoutForm.get('usuario')?.value; }
   get tex() { return this.checkoutForm.get('tex')?.value}
 
-  public async postUsuario() { 
+  public async postEncuesta1() { 
     let datosFormulario = {
 
       
@@ -56,7 +56,7 @@ export class Encuesta1Component implements OnInit {
     try {
       this.mensaje="Se guardaron los datos.";
       this.isDivVisible=true;
-      await this.visitorProviderService.postUser(datosFormulario).toPromise();
+      await this.encuesta1ProviderService.postEncuesta1(datosFormulario).toPromise();
     }
     catch (error) {
       alert("Error al añadir el usuario");
