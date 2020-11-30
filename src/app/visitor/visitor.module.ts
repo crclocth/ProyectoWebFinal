@@ -34,6 +34,7 @@ import { Informacion1Component } from './screens/informacion1/informacion1.compo
 import { Informacion2Component } from './screens/informacion2/informacion2.component';
 import { Informacion3Component } from './screens/informacion3/informacion3.component';
 import { Informacion4Component } from './screens/informacion4/informacion4.component';
+import { NoticiasProviderService } from '../core/providers/noticias/noticias-provider.service';
 
 
 
@@ -52,7 +53,10 @@ import { Informacion4Component } from './screens/informacion4/informacion4.compo
     Encuesta1Component, 
     Encuesta2Component, 
     Encuesta3Component, 
-    Informacion1Component, Informacion2Component, Informacion3Component, Informacion4Component,
+    Informacion1Component, 
+    Informacion2Component, 
+    Informacion3Component, 
+    Informacion4Component,
   ],
     
   imports: [
@@ -74,7 +78,8 @@ import { Informacion4Component } from './screens/informacion4/informacion4.compo
     RecuperarProviderService,
     Encuesta1ProviderService,
     Encuesta2ProviderService,
-    Encuesta3ProviderService
+    Encuesta3ProviderService,
+    NoticiasProviderService
   ],
   
 

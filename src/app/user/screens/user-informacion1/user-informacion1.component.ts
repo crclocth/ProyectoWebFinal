@@ -4,11 +4,11 @@ import { NoticiasProviderService } from '../../../core/providers/noticias/notici
 import { Noticias } from '../../../core/models/noticias.model';
 
 @Component({
-  selector: 'app-informacion1',
-  templateUrl: './informacion1.component.html',
-  styleUrls: ['./informacion1.component.less']
+  selector: 'app-user-informacion1',
+  templateUrl: './user-informacion1.component.html',
+  styleUrls: ['./user-informacion1.component.less']
 })
-export class Informacion1Component implements OnInit {
+export class UserInformacion1Component implements OnInit {
 
   public noticias$!:Observable<Noticias[]>;
 
@@ -22,4 +22,5 @@ export class Informacion1Component implements OnInit {
   ngOnInit(): void {
     
   } 
+
 }

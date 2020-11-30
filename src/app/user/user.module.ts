@@ -21,6 +21,10 @@ import { UserEncuesta1Component } from './screens/user-encuesta1/user-encuesta1.
 import { Encuesta1ProviderService } from '../core/providers/encuesta1/encuesta1-provider.service';
 import { Encuesta2ProviderService } from '../core/providers/encuesta2/encuesta2-provider.service';
 import { Encuesta3ProviderService } from '../core/providers/encuesta3/encuesta3-provider.service';
+import { UserInformacion1Component } from './screens/user-informacion1/user-informacion1.component';
+import { UserInformacion2Component } from './screens/user-informacion2/user-informacion2.component';
+import { UserInformacion3Component } from './screens/user-informacion3/user-informacion3.component';
+import { UserInformacion4Component } from './screens/user-informacion4/user-informacion4.component';
 
 
 
@@ -35,7 +39,7 @@ import { Encuesta3ProviderService } from '../core/providers/encuesta3/encuesta3-
     UserMiperfilComponent, 
     UserEncuesta3Component, 
     UserEncuesta2Component, 
-    UserEncuesta1Component],
+    UserEncuesta1Component, UserInformacion1Component, UserInformacion2Component, UserInformacion3Component, UserInformacion4Component],
   imports: [
     CommonModule,
     UserRoutingModule,
