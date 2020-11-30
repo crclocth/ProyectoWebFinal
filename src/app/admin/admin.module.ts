@@ -14,6 +14,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VisitorProviderService } from '../core/providers/visitor/visitor-provider.service';
 import { SugerenciasProviderService } from '../core/providers/sugerencias/sugerencias-provider.service';
 import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-provider.service';
+import { AdminEncuesta3Component } from './screens/admin-encuesta3/admin-encuesta3.component';
+import { AdminEncuesta2Component } from './screens/admin-encuesta2/admin-encuesta2.component';
+import { AdminEncuesta1Component } from './screens/admin-encuesta1/admin-encuesta1.component';
 
 
 @NgModule({
@@ -23,7 +26,7 @@ import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-
     AdminEncuestasComponent, 
     AdminNosotrosComponent, 
     AdminSugerenciasComponent, 
-    AdminNoticiasComponent],
+    AdminNoticiasComponent, AdminEncuesta3Component, AdminEncuesta2Component, AdminEncuesta1Component],
   imports: [
     CommonModule,
     SharedModule,
@@ -34,7 +37,8 @@ import { RecuperarProviderService } from '../core/providers/recuperar/recuperar-
   providers:[
     VisitorProviderService,
     SugerenciasProviderService,
-    RecuperarProviderService
+    RecuperarProviderService, 
+    
   ],
   exports: [
     AdminComponent, 

@@ -7,6 +7,9 @@ import { AdminEncuestasComponent } from './screens/admin-encuestas/admin-encuest
 import { AdminDescargasComponent } from './screens/admin-descargas/admin-descargas.component';
 import { AdminSugerenciasComponent } from './screens/admin-sugerencias/admin-sugerencias.component';
 import { AdminNosotrosComponent } from './screens/admin-nosotros/admin-nosotros.component';
+import { AdminEncuesta1Component } from './screens/admin-encuesta1/admin-encuesta1.component';
+import { AdminEncuesta2Component } from './screens/admin-encuesta2/admin-encuesta2.component';
+import { AdminEncuesta3Component } from './screens/admin-encuesta3/admin-encuesta3.component';
 
 const routes: Routes = [
   
@@ -17,7 +20,10 @@ const routes: Routes = [
       { path: 'encuestas', component:AdminEncuestasComponent},
       { path: 'descargas', component: AdminDescargasComponent},
       { path: 'sugerencias', component: AdminSugerenciasComponent},
-      { path: 'nosotros', component: AdminNosotrosComponent}
+      { path: 'nosotros', component: AdminNosotrosComponent},
+      { path: 'encuesta1', component:AdminEncuesta1Component},
+      { path: 'encuesta2', component:AdminEncuesta2Component},
+      { path: 'encuesta3', component:AdminEncuesta3Component}
     ]  
 }
 

@@ -13,12 +13,12 @@ export class UserEncuestasComponent implements OnInit {
   ngOnInit(): void {
   }
   public irencuesta1(){
-    this.router.navigate(['visitor/encuesta1'])
+    this.router.navigate(['user/encuesta1'])
   }
   public irencuesta2(){
-    this.router.navigate(['visitor/encuesta2'])
+    this.router.navigate(['user/encuesta2'])
   }
   public irencuesta3(){
-    this.router.navigate(['visitor/encuesta3'])
+    this.router.navigate(['user/encuesta3'])
   }
 }

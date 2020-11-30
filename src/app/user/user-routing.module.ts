@@ -8,6 +8,10 @@ import { UserDescargasComponent } from './screens/user-descargas/user-descargas.
 import { UserSugerenciasComponent } from './screens/user-sugerencias/user-sugerencias.component';
 import { UserNosotrosComponent } from './screens/user-nosotros/user-nosotros.component';
 import { UserMiperfilComponent } from './screens/user-miperfil/user-miperfil.component';
+import { UserEncuesta1Component } from './screens/user-encuesta1/user-encuesta1.component';
+import { UserEncuesta2Component } from './screens/user-encuesta2/user-encuesta2.component';
+import { UserEncuesta3Component } from './screens/user-encuesta3/user-encuesta3.component';
+
 
 const routes: Routes = [
     
@@ -19,7 +23,11 @@ const routes: Routes = [
       { path: 'descargas', component: UserDescargasComponent},
       { path: 'sugerencias', component: UserSugerenciasComponent},
       { path: 'nosotros', component: UserNosotrosComponent}, 
-      { path: 'miperfil', component: UserMiperfilComponent}
+      { path: 'miperfil', component: UserMiperfilComponent},
+      { path: 'encuesta1', component:UserEncuesta1Component},
+      { path: 'encuesta2', component:UserEncuesta2Component},
+      { path: 'encuesta3', component:UserEncuesta3Component}
+      
     ]
 }
 ];
