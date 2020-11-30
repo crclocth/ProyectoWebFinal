@@ -30,6 +30,10 @@ import { Encuesta3Component } from './screens/encuesta3/encuesta3.component';
 import { Encuesta1ProviderService } from '../core/providers/encuesta1/encuesta1-provider.service';
 import { Encuesta2ProviderService } from '../core/providers/encuesta2/encuesta2-provider.service';
 import { Encuesta3ProviderService } from '../core/providers/encuesta3/encuesta3-provider.service';
+import { Informacion1Component } from './screens/informacion1/informacion1.component';
+import { Informacion2Component } from './screens/informacion2/informacion2.component';
+import { Informacion3Component } from './screens/informacion3/informacion3.component';
+import { Informacion4Component } from './screens/informacion4/informacion4.component';
 
 
 
@@ -47,7 +51,8 @@ import { Encuesta3ProviderService } from '../core/providers/encuesta3/encuesta3-
     RegistroComponent, 
     Encuesta1Component, 
     Encuesta2Component, 
-    Encuesta3Component,
+    Encuesta3Component, 
+    Informacion1Component, Informacion2Component, Informacion3Component, Informacion4Component,
   ],
     
   imports: [

@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { Route } from '@angular/router';
 import { VisitorProviderService } from '../../../core/providers/visitor/visitor-provider.service';
-import { User } from '../../../core/models/user.model';
 
 @Component({
   selector: 'app-registro',
