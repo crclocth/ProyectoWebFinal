@@ -32,7 +32,8 @@ const component = [
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    
 
   ],
   providers:[
