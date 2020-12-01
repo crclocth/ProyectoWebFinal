@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { NoticiasProviderService } from '../../../core/providers/noticias/noticias-provider.service';
 import { Noticias } from '../../../core/models/noticias.model';
@@ -9,16 +9,20 @@ import { Noticias } from '../../../core/models/noticias.model';
   styleUrls: ['./informacion1.component.less']
 })
 export class Informacion1Component implements OnInit {
-
-  public noticias$!:Observable<Noticias[]>;
+  
+  public noticias$:Observable<Noticias[]>;
 
   constructor(private noticiasProviderService: NoticiasProviderService) {
-    this.noticias$ = this.getNoticias();
+    this.noticias$ = this.getNoticiasx();
   }
   
-  getNoticias(): Observable<Noticias[]>{
-    return this.noticiasProviderService.getNoticias();
+  getNoticiasx(){
+    return this.noticiasProviderService.getNoticias(); 
+    
   }
+
+  
+
   ngOnInit(): void {
     
   } 

@@ -8,6 +8,8 @@ import { NavbarUserComponent } from './navbar-user/navbar-user.component';
 import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { NoticiaCardComponent } from './noticia-card/noticia-card/noticia-card.component';
+import { NoticiasProviderService } from '../core/providers/noticias/noticias-provider.service';
 
 const component = [
   FotterComponent,
@@ -17,11 +19,13 @@ const component = [
   NavbarAdminComponent,
   CabezoteComponent,
   PageNotFoundComponent,
+  NoticiaCardComponent,
   
 ]
 @NgModule({
   declarations: [
     ...component,
+    
     
   ],
   
@@ -29,6 +33,10 @@ const component = [
     CommonModule,
     ReactiveFormsModule,
     FormsModule
+
+  ],
+  providers:[
+    NoticiasProviderService
   ],
 
   exports:[

@@ -15,7 +15,12 @@ export class NoticiasProviderService {
   return this.httpService.post('/noticias/add',recuperar);
   };
 
-  public getNoticia(): Observable<Noticias>{
-    return this.httpService.get<Noticias>('/noticias/all');
+  public getNoticias(): Observable<Noticias[]>{
+    return this.httpService.get<Noticias[]>('/noticias/all');
   };
+
+  public getNoticia(id: string): Observable<Noticias>{
+    return this.httpService.get<Noticias>('/noticias/' + id);
+  };
+
 }

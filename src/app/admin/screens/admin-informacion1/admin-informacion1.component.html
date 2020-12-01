@@ -19,10 +19,3 @@
         </div>
     </div>
 </div>
-
-
-<div *ngFor="let noticia of noticias$ | async">
-
-    {{noticia.titulo}}
-    <a [routerLink]="['/noticias', noticia._id]">Ver mas</a>
-</div>

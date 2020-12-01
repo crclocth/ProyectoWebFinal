@@ -21,8 +21,20 @@
 </div>
 
 
-<div *ngFor="let noticia of noticias$ | async">
+<!---<div class="" *ngFor="let noticia of (noticias$  |async)">
+<div class="">
+    <app-noticia-card [noticiax]="noticias$ |async"></app-noticia-card>
 
-    {{noticia.titulo}}
-    <a [routerLink]="['/noticias', noticia._id]">Ver mas</a>
-</div>
+</div>-->
+<!----
+
+<div class="" *ngFor="let noticia of (noticias$ | async)">
+
+    <app-noticia-card [noticia]="noticia">
+
+
+    </app-noticia-card>
+
+    <button class="btn btn-primary" type="button">Guardar</button>
+
+</div>-->

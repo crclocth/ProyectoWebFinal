@@ -29,4 +29,10 @@ export class HttpService {
         return data.message as type;
       }));
   }
+  public get<type> ( path: string ): Observable<type>{
+    return this.httpClient.post(this.baseUrl+path, this.httpOptions)
+      .pipe(map((data:any) => {
+        return data.message as type;
+      }));
+  }
 }
